@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DETRAN</title>
+</head>
+<body>
+    <h1>Sistema de multas</h1>
+    <label for="txtvel">Velocidade do carro(Km/h): </label>
+    <input type="number" name="txtvel" id="txtvel">
+    <input type="button" value="Veja sua multa" id="suamulta">
+    <div id="resul">Sua Multa: </div>
+
+    <script>
+        var multador = window.document.getElementById('suamulta')
+        multador.addEventListener('click', vermulta)
+
+        function vermulta() {
+            var txtv = window.document.getElementById('txtvel')
+            var resul = window.document.getElementById('resul')
+            var vel = Number(txtv.value)
+            
+
+            multa = Number(vel)
+
+            if (vel > 70) {
+                resul.innerHTML = `<p>Sua multa é de <strong>R$${multa*Number(5)}</strong></p>`
+            } else {
+                resul.innerHTML = `<p>Você <strong>não</strong> recebeu sua multa! pois a velocidade não estava acima do limite!<p>`
+            }
+            resul.innerHTML += `<p>mais sorte da próxima vez!</p>`
+        }
+    </script>
+</body>
+</html>
