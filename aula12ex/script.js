@@ -1,5 +1,5 @@
 corpo.addEventListener('load', carregar())
-
+// load -> evento JavaScript
 function carregar() {
 
 var msg = window.document.getElementById('msg')
@@ -9,8 +9,6 @@ var hora = data.getHours()
 var min = data.getMinutes()
 
 msg.innerHTML = `Agora são ${hora}h${min}`
-
-hora = 16
 
 if (hora < 6){
     img.src = "imagens/madrugada.jpg"
