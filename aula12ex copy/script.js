@@ -32,7 +32,7 @@ function verificar() {
     var fano = document.getElementById('txtano')
     var res = document.getElementById('res')
 
-    if (fano.value.lenght == 0 || fano.value > ano || fano.value < 1907) {
+    if (fano.value.length == 0 || fano.value > ano || fano.value < 1907) {
         window.alert('[ERRO]')
     } else {
         var sex = document.getElementsByName('sexo')
@@ -56,7 +56,7 @@ function verificar() {
             } else {
                 // idoso
             }
-        } else 
+        } else
         genero = 'uma mulher'
         if (idade >=0 && idade < 10) {
             // criança
