@@ -8,7 +8,7 @@ function contar() {
     var passo = window.document.getElementById('passo')
     var res = window.document.getElementById('saida')
 
-    if (inicio.value <= 0|| fim.value <= 0 || passo.value <= 0 || inicio.value > fim.value) 
+    if (inicio.value <= 0|| fim.value <= 0 || inicio.value > fim.value) 
     // Falta de concisão (antes)
 {
         window.alert('Impossivel contar!')
@@ -23,8 +23,13 @@ function contar() {
             resultado += `${nuini} &#x1F449; `
             // Não tinha colocado espaço dentro da string após o emogi
             nuini = nuini + pass
+
+            if (pass === 0) {
+                window.alert("O passo não pode ser zero! considerando passo 1");
+                pass += 1
+            }
         }
-        res.innerHTML = resultado + ('&#9872;')
+        res.innerHTML = resultado + '&#9872;'
         // Não coloquei isso pois não havia colocado o resultado.
     }
 }

@@ -7,11 +7,10 @@
 
 body {
     font: normal 20px arial;
-    background-color: rgb(255, 255, 255);
+    background-color: gray;
 }
 
 header {
-    color: black;
     text-align: center;
 }
 
@@ -25,23 +24,13 @@ section {
     box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.279);
 }
 
-div {
+p {
     text-align: center;
     padding: 7px;
 }
 
-#foto img {
-    width: 250px;
-    border-radius: 50%;
-}
-
 footer {
-    color: white
-    ;
+    color: white;
     text-align: center;
 }
-
-/* 
-'rgb(247, 128, 0)'
-*/
 
