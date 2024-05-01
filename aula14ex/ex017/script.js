@@ -20,3 +20,20 @@
 
 // // Minha versão com ajuda do gpt
 
+var gertab = window.document.getElementById('gt')
+gertab.addEventListener('click', tabuada)
+
+function tabuada() {
+    let num = document.getElementById('txtn')
+    let tab = document.getElementById('seltab')
+
+    if (num.value.length == 0) {
+        window.alert('Por favor digite um número!')
+    } else {
+        let n = Number(num.value)
+        for (let c = 1; c <= 10; c++) {
+            let i = document.createElement('option')
+            
+        }
+    }
+}
