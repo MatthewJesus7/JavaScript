@@ -31,9 +31,12 @@ function tabuada() {
         window.alert('Por favor digite um número!')
     } else {
         let n = Number(num.value)
+        tab.innerHTML = '' //Serve para limpar sempre que mudar o número de calculo
         for (let c = 1; c <= 10; c++) {
-            let i = document.createElement('option')
-            
+            let item = document.createElement('option') // Cria um novo elemento: opção
+            item.text = `${n} x ${c} = ${n*c}` //o texto dentro do item recebe `...`
+            item.value = `tab${c}` //PHP
+            tab.appendChild(item) //A criança de tab tem item dentro
         }
     }
 }
