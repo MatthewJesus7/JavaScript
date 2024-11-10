@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main id="main">
+        <h1>Calculadora</h1>
+        <form class="container calculadora" id="calculadora">
+
+            <label for="number1">
+                <input
+                type="number"
+                id="number1"
+                class="input">
+            </label>
+
+            <label for="operador">
+                <input
+                type="text"
+                id="operador"
+                class="input"
+                max="1"
+                >
+            </label>
+
+            <label for="number2">
+                <input
+                type="number"
+                id="number2"
+                class="input">
+            </label>
+
+            <p>=</p>
+            <p id="resultado"></p>
+        </form>
+
+        <button id="submit">calcular</button>
+
+        <p id="erro"></p>
+
+        
+    </main>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
